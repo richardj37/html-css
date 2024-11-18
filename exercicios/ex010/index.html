@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <!--A adição de imagens dinamicas é realizada com a tag picture dentro dela existem varias tags mas a usada para dinamica é a tag source (source media="(max-width:)" srcset="" type=""
+    media max ou min width é a resolução usada para a troca de imagens com o aumento ou diminuição da tela, srcset é a origem da imagem, type é o tipo de midia )-->
+    <h1>Imagens dinamicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-G.png" alt="imagem dinamica">
+    </picture>
+    <!-- audios são facilmente inseridos e para isso usamos a tag audio e assim como a tag picture nos tambem usamos a tag source dentro da tag audio. a tag audio tambem possue outros atributos os mais comuns da tag audio são preload autoplay e controls, dentro do source do audio tambem existem o src e o type .
+     Mesmo o mp3 sendo o mais comum existem outros tipos de audio sendo eles o .mp3, .ogg e .wav
+     abaixo serão mostrados como exemplo no codigo mesmo que não tenha os arquivos-->
+    <h1>Inserindo audio</h1>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/musica1.mp3" type="audio/mpeg">
+        <source src="midia/musica1.ogg" type="audio/ogg">
+        <source src="midia/musica1.wav" type="audio/wav">
+        <p>Não foi possivel reproduzir o audio baixe o arquivo mp3 <a href="midia/musica1.mp3" 
+        download="musica1.mp3" type="audio/mpeg">aqui</a>.</p>
+    <!--São ultilizados mais de um tipo de arquivo pois existem navegadores e players que não suportam certos tipos de midia. os navegadores tentarão reproduzir na ordem acima primeiro o mp3 seguido do ogg e por ultimo o wav se não for possivel reproduzir nenhum deles ele eviara a mensagem com o link para download-->
+    </audio>
+</body>
+</html>

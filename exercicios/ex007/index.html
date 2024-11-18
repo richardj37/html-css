@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma e Sentido</title>
+</head>
+<body>
+    <!--Visualmente não faz diferença mas para o html5 forma e semântica são importantes, as tags de forma vem do html4 e não são recomendadas.-->
+    <h1>Forma e Semântica.</h1>
+    <p>Exemplo de forma em <b>negrito</b> usando a tag B.</p>
+    <p>Exemplo de Semântica em <strong>negrito</strong> usando a tag strong</p>
+    <p>Exemplo de forma em <i>italico</i> usando a tag I.</p>
+    <p>Exemplo de Semântica em <em>italico</em> usando a tag em.</p>
+    
+    <h2>Exemplo de outras tags</h2>
+    <!--A maioria das tags presentes aqui são alto esplicativas ou serão explicadas no exemplo-->
+    <h2>Mark Del e Ins</h2>
+    <p>A tag mark é usada como <mark>marca texto</mark></p>
+    <p>A tag del é para textos excluidos que podem ser lidos mas não devem ser considerados <del>essa parte não vale de nada</del></p>
+    <p>A tag ins é o oposto do del e é para textos que devem ser lidos com atenção <ins>pois são importantes.</ins>
+    </p>
+    <h2>Big e Small</h2>
+    <p>A tag big é para textos grandes contudo não é mais usada pois é forma e não tem semantica <big>texto grande</big></p>
+    <p>Diferente da tag Big a tag small ainda é usada pois ainda existe sentido em letras pequenas e não só forma <small>texto pequeno</small></p>
+    <h2>Sub e Sup</h2>
+    <p>A tag sup e sub são usadas para textos sobrescritos exemplo<sup>1</sup> e subscritos exemplo<sub>2</sub></p>
+    <h2> Q blockquote e cite</h2>
+    <p>A tag q é para citações onde o texto ja vem com as aspas e não apresenta quebra de linha <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ullam optio ratione cum aut nihil. Fugit, consequuntur! Incidunt, non. Harum?</q></p>
+    <!--A tag q é usada para aspas em citações recomenda-se o uso da tag apenas quando fizer sentido pois é isso que as tags representam e torna mais facil o reconhecimendo do htmkl e dos buscadores, se for usar somente em uma palavra q esta entre aspas digite as aspas normalmente-->
+    <p>Existe outra tag para citações, a blockquote que é usada para citações em blocos e que usa uma quebra de linha por padrão <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptas, aspernatur velit aut nobis fuga sequi totam dolorem molestiae? Consequuntur voluptates fugit, in inventore totam veritatis iure rerum quam id?</blockquote></p>
+    <p>Existe ainda o cite que vai dentro do blockquote e te permite colocar o link para o texto original <blockquote cite="https://www.dicio.com.br/exemplo/">Exemplo</blockquote></p>
+    <!--O cite no blockquotee não altera nada visualmente mas ajuda os buscadores a identificar o livro autor ou site-->
+    <h2>code e pre</h2>
+    <p>A tag code é usada para delitimar codigos indicando ao navegador que se trata de um codigo de computador ele tambem coloca por padrão letras monoespaçadas o que facilita na leitura do codigo. <br>
+    <code>
+    num = int(input('Digite um número'))
+        if num % 2 == 0:
+        print('Esse número é par! ')
+    else:
+        print('Ele é ímpar! ')
+        print('FIM DO PROGRAMA')</code></p>
+    <p>A tag pre é usada para pré formatação usaremos o code acima como exemplo 
+        <pre><code>
+    num = int(input('Digite um número'))
+        if num % 2 == 0:
+        print('Esse número é par! ')
+    else:
+        print('Ele é ímpar! ')
+        print('FIM DO PROGRAMA')</code></pre></p>
+    <h2>abbr e bdo</h2>
+    <p>A tag abbr é para explicar uma abreviação Exemplo <abbr title="Hypertext Markup Lenguage">Html</abbr></p>
+    <p>o codigo bdo direciona letras e é basicamente inutil <ins><em>e não tem motivo nenhum pra voce aprender</em></ins> <bdo dir="ltr">Leia a proxima parte da ultima letra ate a primeira</bdo> <bdo dir="rtl">Ta ao contrario</bdo></p>
+
+</body>
+</html>

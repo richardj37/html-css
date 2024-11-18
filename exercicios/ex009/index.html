@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Links</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <!--links externos são links que levam para outros sites, é importante adicionar o target="blank" para que o usuario abra o link externo em uma nova aba e não saia do seu site o rel é usado principalmente por buscadores apesar de não ser necessario é importante para que os buscadores como o google reconheçam como link externo ou interno-->
+    <p>Este é um exemplo de um link Externo que leva a pagina do <a  href="https://youtube.com/CursoemVideo" target="_blank" rel="nofollow">youtube do curso em video</a></p>
+
+    <!--Links Internos são aqueles que levam a outra pagina de um mesmo site. O uso de rel é recomendado para next e prev -->
+    <h2>Links Internos</h2>
+    <p>Este é um exemplo de link interno que leva para a <a href="pag002.html" rel="next">pagina 2</a></p>
+    <p>Este é um link que leva para a <a href="links/pag003.html" rel="next">pagina 3</a></p>
+
+    <h2>Links Download</h2>
+    <ul>
+        <li><a href="download/livro1.pdf" download="livro1.zip"
+            type="application/pdf">Baixar pdf</a></li>
+        <li><a href="download/livro1.zip" download="livro1.zip" type="application/zip">Baixar zip</a></li>
+    </ul>
+
+</body>
+</html>

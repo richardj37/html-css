@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Listas</title>
+</head>
+<body>
+    <h1>Exemplos de Listas</h1>
+    <!--Existem tags para listagem sendo elas a tag ol para listas ordenadas e ul para listas não ordenadas dentro de cada uma dessas tags existe uma tag chamada type que serve como  variação de marcações digite type dentro da tag ol em seguida escolha entre 1, A, a, I, i, digite type dentro da tag ul em seguida escolha entre square, disc e circle. Exemplos de listas abaixo-->
+    <h2>Listas ordenadas(tag ol)</h2>
+    <!--Listas ordenadas são listas onde a ordem de cada item tem importancia com a lista ordenada você pode por exemplo adicionar algo depois de Acordar e ele substituira o Tomar remedio assim se tornando o item 2-->
+    <ol type="1"> <!-- substitua o 1 por A, a, I ou i-->
+    <li>Acordar</li>
+    <li>Tomar remedio</li>
+    <li>Tomar café</li>   
+    <li>Estudar</li>
+    <li>Arrumar cozinha</li>
+    <li>Fazer almoço e comer</li>
+    <li>Estudar</li>
+    <li>Tomar café</li>
+    <li>Descansar</li>
+    <li>Jantar</li>
+    <li>Tomar remedio</li>
+    <li>Dormir</li>
+    </ol>
+    <h2>Lista não ordenada</h2> 
+    <!--Listas não ordenadas são listas onde a ordem não importa como por exemplo uma lista de compras-->
+    <ul type="square"><!-- substitua o square por circle ou disc-->
+        <li>Pão</li>
+        <li>Biscoito</li>
+        <li>Carne</li>
+        <li>Detergente</li>
+        <li>Sabão em pó</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <!--Listas podem ser misturadas em varias formas como um ranking de suas coisas favoritas ou quantidades de coisas. Abaixo um exemplo de listas mistas, para que a contagem das listas ordenadas iniciem em determinado numero ou letra utilisamos o start dentro da tag ol, o start utiliza somente numericos então se quiser que sua contagem inicie em B tera que primeiro trocar o type para A e depois o start para 2 (<ol type="A" start="2">)-->
+    <h2>Listas Mistas</h2>
+    <ol>
+        <li>Lays</li>
+        <ul>
+            <li>Vinagre e Sal</li>
+            <ol>
+                <li>*****</li>
+            </ol>
+            <li>Sour Cream</li>
+            <ol start="2">
+                <li>****</li>
+            </ol>
+            <li>Original</li>
+            <ol start="3">
+                <li>***</li>
+            </ol>
+            
+        </ul>
+        <li>Ruffles</li>
+        <ul>
+            <li>Churrasco</li>
+            <li>Cebola e Salsa</li>
+            <li>Original</li>
+        </ul>
+        <li>Sensações</li>
+        <ul>
+            <li>Frango grelhado</li>
+            <li>Mediterraneo</li>
+            <li>Peito de peru</li>
+        </ul>
+        <li>Pringles</li>
+        <ul>
+            <li>Churrasco</li>
+            <li>Sour Cream</li>
+            <li>Queijo</li>
+            <li>Original</li>
+        </ul>
+    </ol>
+<!--Listas de definição como o nome já diz é uma lista usada para dar a definição de algo as listas de definição tem 3 tag são elas a tag dl que é usada para abrir uma lista de definição a tag dt que fica dentro da lista dl e é usada para dar o termo e a tag dd que vai abaixo da tag dt que é usada para dar a definição do termo-->
+    <h2>Listas de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Html é uma linguagem de Marcação usada principalmente para gerar o conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>CSS é uma linguagem de Marcação usada para dar estilo a um site</dd>
+        <dt>JavaScript</dt>
+        <dd>JavaScript é uma linguagem de programação usada para construir sites</dd>
+    </dl>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElement</title>
+    <style>
+        /*
+        pseudo elementos são representados por (::)
+        pseudo classes são representados por (:)
+        
+        pseudo classes são usadas para ações como por exemplo o hover, que funciona somente quando o mouse passa sobre algo ou o active que funciona quando o elemento é clicado.
+
+        por outro lado pseudo elementos são usados para pre configurações, como colocar simbolos antes(before) e depois(after) de um link ou elemento.
+
+        o > é a representação usada para identificar a hierarquia de uma tag dentro da outra, exeplo se tivermos a seguinte linha:
+        <a href="Exemplo de URL">
+            <p>Exemplo de paragrafo</p>
+        </a>
+
+        a tag p é filha da tag a nesse caso representamos no style da seguinte forma:
+
+        a>p{
+        }
+        
+        isso é usado por exemplo para esconder textos e fazer esses textos escondidos só aparecer em consequencia de determinada ação do usuario como o caso do hover que é passar o mouse sobre o elemento ou o active que é clicar sobre o elemento 
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: #da1c1c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: #471b1b;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+            background-image: linear-gradient(to right, white, grey);
+            border-radius: 5px;
+        }
+        a>p{
+            display: none;
+        }
+        a:active>p{
+            display:block;
+        }
+        .importante::after{
+            content:'(◉ω◉)';
+        }
+        .importante::before{
+            content:'➤';
+        }
+
+    </style>
+</head>
+<body>
+    <li><a href="https://www.youtube.com/watch?v=63CBbWHH1CE" target="_blank">Canal Youtube <p>kkkkkkkkkkkkk</p></a></li>
+    <li><a href="https://www.youtube.com/watch?v=63CBbWHH1CE" class="importante" target="_blank">Repositorio GitHub</a></li>
+    <li><a href="https://www.youtube.com/shorts/SXHMnicI6Pg" class="importante" target="_blank">Site Curso</a></li>
+</body>
+</html>

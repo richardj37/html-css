@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel pratica</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:none;
+
+        }
+
+        h1{
+            background-color: lightgray;
+            height: 500px;
+            width: 500px;
+            border-width: 10px ;
+            border-style: solid;
+            border-color: brown;
+            padding: 10px 5px 10px 5px ;
+            margin: 10px auto 45px auto ;
+            /*O uso do auto é para centralizar automaticamente*/         
+            outline-width: 10px  ;
+            outline-style: solid;
+            outline-color: aqua;
+            
+        }
+
+        a{
+            /*
+            aqui é usado para border, padding, margin e outline
+            o uso de shorthands.
+            */
+            text-decoration: none;
+            color: black;
+            background-image: linear-gradient(to right, rgba(68, 34, 68, 0.712), rgba(5, 44, 5, 0.788));
+            border: 10px dotted grey;
+            padding: 10px 15px 10px 15px;
+            margin: 10px auto 10px auto;
+            outline: 10px solid grey;
+        }
+        a:hover{
+            color: goldenrod;
+            border: 10px dotted red ;
+            padding: 10px 15px 10px 15px;
+            margin: 10px 10px 10px 10px;
+            outline: 10px solid blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Box-level</h1>
+    <p>Este tambem é um exemplo de Box-level <a href="#" target="_blank">este é um exemplo de inline-level</a></p>
+</body>
+</html>

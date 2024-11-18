@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <!--videos são simples de serem inseridos e existem dois tipos de links para se colocar o video em um site sendo eles os links internos que são aqueles em que o proprietario usa o proprio servidor e os links externos onde se usa um servidor externo como o do youtube e a melhor recomendação é o uso de links externos.-->
+    <h1>Inserindo videos via link interno</h1>
+    <p>Este é um exemplo de video interno</p>
+    <video width="560" poster="image/image.png" controls autoplay loop>
+        <source src="media/video1.mp4" type="video/mp4">
+        <source src="media/video1.mkv" type="video/mp4">
+        <source src="media/video1.webm" type="video/webm">
+    </video>
+    <!-- para inserir links externos abra um video no youtube clique em compartilhar depois em incorporar copie o codigo e cole no html
+     note que o uso de videos externos como o do youtube deixarão seus videos publicos para o caso de precisar de videos que somente pessoas como assinantes vejam pode-se ultilizar outras plataformas como o vimeo e o processo para anexar os links externos no vimeo é o mesmo-->
+    <h1>Insreindo videos via links externos</h1>
+    <div id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=uEM80WL9GlEw5gee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe class></div>
+</body>
+</html>

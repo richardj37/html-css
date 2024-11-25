@@ -1,9 +1,100 @@
 @charset "UTF-8";
 
-:root{
-
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
+@font-face {
+    font-family: "Cordel";
+    src: url(fontes/xilosa_.ttf);
+}
+:root{
+    --color:#F8AFB6;
+}
+html, body{
+    min-height: 100vh;
+    background-color: var(--color);
+    font-family: "Cordel";
+}
 
+header{
+    background-color: var(--color);
+    color: black;
+    text-align: center;
+    border: 10px solid black;
+    border-bottom: 0px;
+}
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header>p{
+    padding-bottom: 50px;
+}
+
+header p a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 6vh;
+}
+
+section.normal{
+    background-color: var(--color);
+    color: black;
+    border: 10px solid black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: whitesmoke;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.678);
+    
+}
+
+section.imagem#imagem1{
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem#imagem2{
+    background-image: url(imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 400px;
+    padding-left: 10px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    padding-top: 0px;
 }

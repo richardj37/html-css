@@ -16,8 +16,15 @@
             height: 20px;
             
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
         thead{
-            background-color: grey;
+            background-color: rgb(41, 40, 40);
             color: whitesmoke;
         }
         th{
@@ -37,25 +44,29 @@
             text-align: right;
         }
         tfoot{
-            background-color: grey;
+            background-color: rgb(41, 40, 40);
             color: whitesmoke;
 
         }
     </style>
 </head>
 <body>
-    <h1></h1>
+    <h1>Tabelas Grandes</h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>SP</td>
                 <td class="num">44 411 238</td>
+                
             </tr>
             <tr>
                 <td>MG</td>
@@ -65,10 +76,106 @@
                 <td>RJ</td>
                 <td class="num">16 055 174</td>
             </tr>
+            <tr>
+                <td>BA</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>PR</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>RS</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>PE</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>CE</td>
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>PA</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>SC</td>
+                <td class="num">8 058 447</td>
+            </tr>
+            <tr>
+                <td>GO</td>
+                <td class="num">7 350 483	</td>
+            </tr>
+            <tr>
+                <td>MA</td>
+                <td class="num">7 010 960	</td>
+            </tr>
+            <tr>
+                <td>AM</td>
+                <td class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td>PB</td>
+                <td class="num">4 145 040	</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td>MT</td>
+                <td class="num">3 836 399</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td class="num">3 446 071</td>
+            </tr>
+            <tr>
+                <td>PI</td>
+                <td class="num">3 375 646</td>
+            </tr>
+            <tr>
+                <td>AL</td>
+                <td class="num">3 220 104</td>
+            </tr>
+            <tr>
+                <td>DF</td>
+                <td class="num">2 982 815</td>
+            </tr>
+            <tr>
+                <td>MS</td>
+                <td class="num">2 901 895</td>
+            </tr>
+            <tr>
+                <td>SE</td>
+                <td class="num">2 291 077	</td>
+            </tr>
+            <tr>
+                <td>RO</td>
+                <td class="num">1 746 227	</td>
+            </tr>
+            <tr>
+                <td>TO</td>
+                <td class="num">1 577 342</td>
+            </tr>
+            <tr>
+                <td>AC</td>
+                <td class="num">880 631</td>
+            </tr>
+            <tr>
+                <td>AM</td>
+                <td class="num">802 837	</td>
+            </tr>
+            <tr>
+                <td>RR</td>
+                <td class="num">716 793</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>000000000</td>
             </tr>
         </tfoot>

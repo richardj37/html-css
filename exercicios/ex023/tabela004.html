@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 04</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome{
+            background-color: #f08080;
+        }
+        col.cgrupo{
+            background-color: #b15151;
+        }
+        col.cprof{
+            background-color: #803838;
+        }
+        th.nome{
+            background-color: pink;
+        }
+        tr.michael{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício Tabela</h1>
+    <table>
+        <colgroup>            
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col" class="nome">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissâo</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Treinador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Elereicista</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Veterinária</td>
+        </tr>
+        <tr class="michael">
+            <td>Michal Jackson</td>
+            <td>thriller</td>
+            <td>N/A</td>
+            <td>Lord</td>
+        </tr>
+    </table>
+</body>
+</html>

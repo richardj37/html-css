@@ -8,6 +8,51 @@
 <body>
     <h1>Formulário/email/tel</h1>
     <form action="">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="iuser">Usuario</label>
+            <input type="text" name="user" id="iuser" minlength="8" maxlength="30" required autocomplete="on"><br>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" min="8" max="30" required>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" checked><label for="masc">Masculino</label><br>
+            <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="espfut" id="iespfut">
+            <label for="iespfut">Futebol</label><br>
+
+            <input type="checkbox" name="esbasq" id="iesbasq">
+            <label for="iesbasq">Basquete</label><br>
+
+            <input type="checkbox" name="esvolei" id="iesvolei">
+            <label for="iesvolei">Volei</label><br>
+
+            <input type="checkbox" name="espeteca" id="iespeteca">
+            <label for="iespeteca">Peteca</label><br>
+
+            <input type="checkbox" name="estenis" id="iestenis">
+            <label for="iestenis">Tênis</label><br>
+
+            <input type="checkbox" name="eshand" id="ieshand">
+            <label for="ieshand">Handbol</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Quantidade</legend>
+            <label for="inum">Media</label>
+            <input type="number" name="num" id="inum" step="1">
+        </fieldset>
+        <fieldset>
+            <legend>Data e Hora</legend>
+            <input type="month" name="mes" id="imes"><br>
+            <input type="date" name="data" id="idata"><br>
+            <input type="time" name="hora" id="ihora">
+        </fieldset>
+
         <p>
             <label for="iemail">E-mail</label>
             <input type="email" name="email" id="iemail" autocomplete="email" required>
@@ -16,6 +61,13 @@
             <label for="itel">Telefone</label>
             <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$" required >
         </p>
+        <fieldset>
+            <legend>Color</legend>
+
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" >
+
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

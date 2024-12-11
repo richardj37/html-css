@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario output</title>
+</head>
+<body>
+    <h1>Output formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" oninput="isoma.value = Number(inum1.value) + Number(inum2.value)">
+
+        <p>
+            <label for="inum1">Numero 1:</label>
+            <input type="number" name="num1" id="inum1" min="0" max="50" required oninput="isub.value = Number(inum1.value) - Number(inum2.value)"
+            >
+        </p>
+
+        <p>
+            <label for="inum2">Numero 2:</label>
+            <input type="number" name="num2" id="inum2" min="0" max="50" required oninput="isub.value = Number(inum1.value) - Number(inum2.value)"
+            >
+        </p>
+        <p>
+            <label for="isoma">Adição</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <label for="isub">Subtração</label>
+            <output name="sub" id="isub">0</output>
+        </p>
+        <P>
+            <label for="imult">Multiplicação</label>
+            <output name="mult" id="imult">0</output>
+        </P>
+        <P>
+            <label for="idiv">Divisão</label>
+            <output name="div" id="idiv">0</output>
+        </P>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    oninput="imult.value = Number(inum1.value) * Number(inum2.value)"
+            oninput="idiv.value = Number(inum1.value) / Number(inum2.value)"
+</body>
+</html>

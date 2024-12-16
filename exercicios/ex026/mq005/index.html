@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Reponsivo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Menu Responsivo</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="menu">
+            <ul>
+                <li class="itensmenu"><a href="#">Um</a></li>
+                <li class="itensmenu"><a href="#">Dois</a></li>
+                <li class="itensmenu"><a href="#">Tres</a></li>
+                <li class="itensmenu"><a href="#">Quatro</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt tempora quis deleniti ducimus consectetur cum, sit dolorum porro consequatur minima! Alias magnam doloribus porro qui, eum hic saepe corrupti blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto rem laborum, inventore similique fugiat consequuntur at laudantium in aperiam soluta expedita repellat iure? Voluptates, nostrum tempora? Est, quibusdam rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias? Consequuntur repudiandae qui dicta velit earum, aspernatur incidunt at ipsa consectetur iure id similique aperiam laborum odio sapiente tenetur sequi.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatum hic pariatur repellat, rerum nemo dolor temporibus aperiam in exercitationem aspernatur omnis quod corrupti. Sapiente nam eos fugit dolor expedita! </p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, autem deleniti? Quasi nemo distinctio ullam perferendis, facilis fugit, veniam voluptatem possimus quibusdam sunt nobis eos impedit maxime, unde ipsam modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a, perferendis consectetur placeat harum distinctio ullam cum eius accusantium totam neque ipsa, fuga eligendi maiores repellendus autem fugit in hic.</p>
+        </article>
+    </main>
+    <script>
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }else{
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none';
+            }else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
